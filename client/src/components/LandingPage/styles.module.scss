@@ -1,0 +1,14 @@
+.mainContainer{
+    width: 100%;
+    margin: 0;
+
+    .subTitleContainer{
+        width:85%;
+        margin: 1rem auto;
+    }
+
+    .subContainer{
+        display: flex;
+        justify-content: center;
+    }
+} 
