@@ -5,6 +5,8 @@ import { withRouter } from 'react-router-dom';
 import MainImage from 'components/Common/MainImage';
 import MovieInfo from './Sections/MovieInfo';
 import GridCards from 'components/Common/GridCards';
+import Favorite from './Sections/Favorite';
+
 
 const MovieDetail = (props) => {
 
@@ -44,6 +46,11 @@ const MovieDetail = (props) => {
             {/* Body */}
             <div style={{ width: '85%', margin: '1rem auto' }}>
 
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <Favorite movieInfo={Movie} movieId={movieId} userFrom={localStorage.getItem('userId')} />
+                </div>
+
+
                 {/* Movie Info */}
                 <MovieInfo movie={Movie} />
 
@@ -66,10 +73,6 @@ const MovieDetail = (props) => {
                         ))}
                     </Row>
                 }
-
-
-
-
             </div>
         </div>
     );
