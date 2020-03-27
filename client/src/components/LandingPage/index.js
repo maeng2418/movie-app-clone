@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { API_URL, API_KEY, IMAGE_BASE_URL } from 'components/Config';
-import MainImage from './Sections/MainImage';
+import MainImage from 'components/Common/MainImage';
 import GridCards from 'components/Common/GridCards';
 import { Row } from 'antd';
 import styles from './styles.module.scss';
@@ -42,7 +42,7 @@ function LandingPage(props) {
       {MainMoiveImage &&
         <MainImage
           image={`${IMAGE_BASE_URL}w1280${MainMoiveImage.backdrop_path}`}
-          title={MainMoiveImage.orginal_title}
+          title={MainMoiveImage.original_title}
           text={MainMoiveImage.overview}
 
         />
