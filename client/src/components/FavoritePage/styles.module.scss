@@ -1,0 +1,15 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collaps;
+    width: 100%;
+
+    tr {
+        background-color: white;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+}
